@@ -4,7 +4,7 @@ const mahasiswaSchema = mongoose.Schema({
 	Nama : String,
 	NIM : String,
 	Prodi : String,
-	Angkatan : String,
+	Angkatan : Number,
 	Status : String,
 });
 
