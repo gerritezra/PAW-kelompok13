@@ -8,6 +8,7 @@ import router from './routes/posts.js';
 
 const app = express();
 
+app.use('/mahasiswa',mahasiwaRoutes)
 app.use(bodyParser.json({ limit :"50mb",extended : true }));
 app.use(bodyParser.urlencoded({ limit :"50mb",extended : true }));
 app.use(cors());
