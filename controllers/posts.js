@@ -29,7 +29,8 @@ export const getMahasiswaById = async(req,res)=>{
 //function Create Mahasiswa
 export const createMahasiswa = async(req,res)=>{
 	const mahasiswa = req.body;
-
+	console.log(req.body);
+	
 	const newMahasiswa = new Mahasiswa(mahasiswa);
 
 	try{
@@ -45,10 +46,11 @@ export const createMahasiswa = async(req,res)=>{
 
 //function Update Mahasiswa
 export const updateMahasiswa = async(req,res)=>{
-    const cekId = await Product.findById(req.params.id);
+    const cekId = await Mahasiswa.findById(req.params.id);
+    console.log(req.body)
     if(!cekId) return res.status(404).json({message: "Data tidak ditemukan"}); 
     try {
-        const updatedMahasiswa = await Product.updateOne({_id: req.params.id}, {$set: req.body});
+        const updatedMahasiswa = await Mahasiswa.findByIdAndUpdate(req.params.id,req.body);
         res.status(200).json(updateMahasiswa);
     } catch (error) {
         res.status(400).json({message: error.message});
@@ -57,10 +59,10 @@ export const updateMahasiswa = async(req,res)=>{
 
 //function Delete Mahasiswa
 export const deleteMahasiswa = async(req,res)=>{
-    const cekId = await Product.findById(req.params.id);
+    const cekId = await Mahasiswa.findById(req.params.id);
     if(!cekId) return res.status(404).json({message: "Data tidak ditemukan"});
     try {
-        const deletedMahasiswa = await Product.deleteOne({_id: req.params.id});
+        const deletedMahasiswa = await Mahasiswa.findByIdAndRemove(req.params.id);
         res.status(200).json(deletedMahasiswa);
     } catch (error) {
         res.status(400).json({message: error.message});
