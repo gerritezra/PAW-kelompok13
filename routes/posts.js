@@ -13,7 +13,7 @@ router.get('/:id',getMahasiswaById);
 router.post('/',createMahasiswa);
 
 //Route get UPDATE Mahasiswa
-router.patch('/:id',updateMahasiswa);
+router.put('/:id',updateMahasiswa);
 
 //Route get DELETE Mahasiswa
 router.delete('/:id',deleteMahasiswa);
