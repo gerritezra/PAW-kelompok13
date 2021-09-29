@@ -22,7 +22,7 @@ mongoose.connect(CONNECTION_URL,{ useNewUrlParser: true , useUnifiedTopology : t
 
 app.get("/", (req, res) => {
 res.json({
-message: "REST API MAHASISWA CRUD telah Berhasil"});
+message: "CRUD API MAHASISWA telah Berhasil"});
 });
 
 
