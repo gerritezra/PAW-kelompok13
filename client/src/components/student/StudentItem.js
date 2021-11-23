@@ -8,18 +8,18 @@ const StudentItem = ({ student }) => {
 
   return (
     <tr>
-      <td>{student.firstname}</td>
-      <td>{student.lastname}</td>
-      <td>{student.major.major}</td>
+      <td>{student.Nama}</td>
+      <td>{student.NIM}</td>
+      <td>{student.Prodi}</td>
       <td>
         <Link className='btn btn-light btn-sm' to={`/students/${student._id}`}>
-          view
+          Tampilkan
         </Link>{" "}
         <button
           className='btn btn-light btn-sm'
           onClick={() => deleteStudent(student._id)}
         >
-          delete
+          Hapus
         </button>
       </td>
     </tr>
