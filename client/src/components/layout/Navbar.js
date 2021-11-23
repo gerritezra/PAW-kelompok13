@@ -16,12 +16,7 @@ const Navbar = () => {
           <ul className='navbar-nav ml-auto'>
             <li className='nav-item'>
               <Link to='/' className='nav-link'>
-                Students
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link to='/majors' className='nav-link'>
-                Majors
+                Data Mahasiswa
               </Link>
             </li>
             <li className='nav-item'>
