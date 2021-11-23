@@ -4,20 +4,20 @@ import { Link, useHistory } from "react-router-dom";
 import { useAppContext } from "../../context/AppContext";
 
 const AddStudent = () => {
-  const { majors, addStudent } = useAppContext();
+  const { addStudent } = useAppContext();
 
   const history = useHistory();
 
   const [formData, setFormData] = useState({
-    firstname: "",
-    lastname: "",
-    age: 0,
-    major: "",
-    email: "",
-    phone: "",
+    Nama : "",
+	  NIM : "",
+    Prodi : "",
+    Fakultas : "",
+    Angkatan : "",
+    Status : "",
   });
 
-  const { firstname, lastname, age, major, email, phone } = formData;
+  const { Nama, NIM, Prodi, Fakultas, Angkatan, Status } = formData;
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -29,12 +29,12 @@ const AddStudent = () => {
     addStudent(formData);
 
     setFormData({
-      firstname: "",
-      lastname: "",
-      age: 0,
-      major: "",
-      email: "",
-      phone: "",
+      Nama : "",
+      NIM : "",
+      Prodi : "",
+      Fakultas : "",
+      Angkatan : "",
+      Status : "",
     });
 
     history.push("/");
@@ -47,81 +47,73 @@ const AddStudent = () => {
       </h3>
       <form onSubmit={handleAddStudent}>
         <div className='form-group'>
-          <label>First Name</label>
+          <label>Nama</label>
           <input
             type='text'
             required
             className='form-control'
-            name='firstname'
-            value={firstname}
+            name='Nama'
+            value={Nama}
             onChange={handleChange}
           />
         </div>
 
         <div className='form-group'>
-          <label>Last Name</label>
+          <label>NIM</label>
           <input
             type='text'
             required
             className='form-control'
-            name='lastname'
-            value={lastname}
+            name='NIM'
+            value={NIM}
             onChange={handleChange}
           />
         </div>
 
         <div className='form-group'>
-          <label>Age</label>
+          <label>Program Studi</label>
+          <input
+            type='text'
+            required
+            className='form-control'
+            name='Prodi'
+            value={Prodi}
+            onChange={handleChange}
+          />
+        </div>
+
+        <div className='form-group'>
+          <label>Fakultas</label>
+          <input
+            type='text'
+            required
+            className='form-control'
+            name='Fakultas'
+            value={Fakultas}
+            onChange={handleChange}
+          />
+        </div>
+
+        <div className='form-group'>
+          <label>Angkatan</label>
           <input
             type='number'
             required
             className='form-control'
-            name='age'
-            value={age}
+            name='Angkatan'
+            value={Angkatan}
             onChange={handleChange}
           />
         </div>
 
         <div className='form-group'>
-          <label>Major</label>
-          <select
-            required
-            className='form-control'
-            name='major'
-            value={major}
-            onChange={handleChange}
-          >
-            <option value='' disabled>
-              Selec a major
-            </option>
-            {majors.map((item) => (
-              <option value={item._id} key={item._id}>
-                {item.major}
-              </option>
-            ))}
-          </select>
-        </div>
-
-        <div className='form-group'>
-          <label>Email</label>
-          <input
-            type='email'
-            required
-            className='form-control'
-            name='email'
-            value={email}
-            onChange={handleChange}
-          />
-        </div>
-
-        <div className='form-group'>
-          <label>Phone</label>
+          <label>Status</label>
           <input
             type='text'
             required
             className='form-control'
-            name='phone'
-            value={phone}
+            name='Status'
+            value={Status}
             onChange={handleChange}
           />
         </div>
