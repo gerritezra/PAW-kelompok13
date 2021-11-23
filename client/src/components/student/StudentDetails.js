@@ -13,7 +13,7 @@ const StudentDetails = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const { _id, firstname, lastname, age, major, email, phone } = student;
+  const { _id, Nama, NIM, Prodi, Fakultas, Angkatan, Status } = student;
 
   if (!student || loading) return <h2>Loading</h2>;
 
@@ -26,20 +26,23 @@ const StudentDetails = () => {
             className='card-title'
             style={{ color: "brown", textTransform: "uppercase" }}
           >
-            {firstname} {lastname}
+            {Nama}
           </h4>
           <hr />
           <p className='card-text'>
-            <strong>Age:</strong> {age}
+            <strong>NIM: </strong> {NIM}
           </p>
           <p className='card-text'>
-            <strong>Major:</strong> {major && major.major}
+            <strong>Prodi: </strong> {Prodi}
           </p>
           <p className='card-text'>
-            <strong>Email:</strong> {email}
+            <strong>Fakultas: </strong> {Fakultas}
           </p>
           <p className='card-text'>
-            <strong>Phone:</strong> {phone}
+            <strong>Angkatan:</strong> {Angkatan}
+          </p>
+          <p className='card-text'>
+            <strong>Status:</strong> {Status}
           </p>
           <hr />
           <Link
