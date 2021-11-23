@@ -5,36 +5,12 @@ import {
   STUDENT_EDIT,
   STUDENT_DELETE,
   STUDENT_ERROR,
-  MAJORS_GET,
-  MAJOR_ADD,
-  MAJOR_EDIT,
-  MAJOR_DELETE,
-  MAJOR_ERROR,
 } from "./ActionTypes";
 
 const reducer = (state, action) => {
   const { type, payload } = action;
 
   switch (type) {
-    case MAJORS_GET:
-      return { ...state, loading: false, majors: payload };
-    case MAJOR_ADD:
-      return { ...state, loading: false, majors: [payload, ...state.majors] };
-    case MAJOR_EDIT:
-      return {
-        ...state,
-        loading: false,
-        // Replace the edit major with payload in the list
-        majors: state.majors.map((maj) =>
-          maj._id === payload.id ? { ...payload.major } : maj
-        ),
-      };
-    case MAJOR_DELETE:
-      return {
-        ...state,
-        loading: false,
-        majors: state.majors.filter((maj) => maj._id !== payload),
-      };
     case STUDENTS_GET:
       return { ...state, loading: false, students: payload };
     case STUDENT_GET:
