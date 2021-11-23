@@ -30,9 +30,9 @@ const StudentList = () => {
       <table className='table  table-hover table-success'>
         <thead className='thead-dark'>
           <tr>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Major</th>
+            <th>Nama</th>
+            <th>NIM</th>
+            <th>Prodi</th>
             <th>Actions</th>
           </tr>
         </thead>
