@@ -11,16 +11,12 @@ import StudentList from "./components/student/StudentList";
 import StudentDetails from "./components/student/StudentDetails";
 import AddStudent from "./components/student/AddStudent";
 import EditStudent from "./components/student/EditStudent";
-import MajorList from "./components/major/MajorList";
-import AddMajor from "./components/major/AddMajor";
 
 const App = () => {
-  const { getStudents, getMajors } = useAppContext();
+  const { getStudents } = useAppContext();
 
   useEffect(() => {
     getStudents();
-    getMajors();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
@@ -33,8 +29,6 @@ const App = () => {
           <Route exact path='/students/add' component={AddStudent} />
           <Route exact path='/students/edit/:id' component={EditStudent} />
           <Route exact path='/students/:id' component={StudentDetails} />
-          <Route exact path='/majors' component={MajorList} />
-          <Route exact path='/majors/add' component={AddMajor} />
         </Switch>
       </div>
     </BrowserRouter>
