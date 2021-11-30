@@ -1,0 +1,139 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.CreateMahasiswa {
+  background-color: #d7e0e9;
+  min-height: 100vh;
+  color: white;
+}
+
+.DetailMahasiswa {
+  background-color: #d7e0e9;
+  min-height: 100vh;
+  color: white;
+}
+
+.UpdateMahasiswa {
+  background-color: #d7e0e9;
+  min-height: 100vh;
+  color: white;
+}
+
+.ListMahasiswa {
+  background-color: #d7e0e9;
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  min-width: 100px;
+  color: white;
+}
+
+h1{
+  color : black;
+}
+
+p{
+  color : black;
+  margin: 0px;
+}
+
+label{
+  color : black;
+  margin: 0px;
+}
+div{
+  color:black;
+}
+
+.CreateJurusan {
+  background-color: #fbfce5;
+  min-height: 100vh;
+  color: white;
+}
+
+.DetailJurusan {
+  background-color: #fbfce5;
+  min-height: 100vh;
+  color: white;
+}
+
+.UpdateJurusan {
+  background-color: #fbfce5;
+  min-height: 100vh;
+  color: white;
+}
+
+.ListJurusan {
+  background-color: #fbfce5;
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  min-width: 100px;
+  color: white;
+}
+
+.list {
+  display: block;
+  margin: 20px 0 50px 0;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 1fr;
+  grid-gap: 2em;
+}
+
+.card-container {
+  width: 100%;
+  border: 1px solid rgba(0,0,.125);
+  margin-bottom: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.desc {
+  padding: 10px;
+}
+
+.desc h2 {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.desc h3, p {
+  font-weight: 300;
+}
+
+.desc h3 {
+  color: #6c757d;
+  font-size: 1em;
+  padding: 10px 0 10px 0;
+}

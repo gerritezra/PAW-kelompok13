@@ -1,0 +1,4 @@
+server/node_modules/*
+server/gambar/*
+server/uploads/*
+client/node_modules/*
