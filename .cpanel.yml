@@ -1,15 +1,13 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/u1031559/public_html/data-mahasiswa
-    - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp style.css $DEPLOYPATH
+    - export DEPLOYPATH=/home/u1031559/public_html/data-mahasiswa    
+    - /bin/cp index.js $DEPLOYPATH   
     - /bin/cp -R img $DEPLOYPATH
     - /bin/cp -R client $DEPLOYPATH
     - /bin/cp -R controllers $DEPLOYPATH
     - /bin/cp -R models $DEPLOYPATH
     - /bin/cp -R node_modules $DEPLOYPATH
     - /bin/cp -R routes $DEPLOYPATH
-    - /bin/cp index.js $DEPLOYPATH
     - /bin/cp package-lock.json $DEPLOYPATH
     - /bin/cp package.json $DEPLOYPATH
