@@ -34,10 +34,10 @@ mongoose.connect(CONNECTION_URL,{ useNewUrlParser: true , useUnifiedTopology : t
 	.then(() => app.listen(PORT,() => console.log(`server running on port : ${PORT}`)))
 	.catch((error) => console.log(error.message));
 
-app.get("/", (req, res) => {
-res.json({
-	message: "CRUD API MAHASISWA telah Berhasil"});
-});
+	
+	
+	
+app.listen(PORT, () => console.log(`Server is running in PORT ${PORT}`));
 
 
 
