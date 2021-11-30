@@ -1,0 +1,8 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/u1031559/public_html/data-mahasiswa
+    - /bin/cp -R client $DEPLOYPATH
+    - /bin/cp -R server $DEPLOYPATH
+    - /bin/cp package-lock.json $DEPLOYPATH
+    - /bin/cp .gitignore $DEPLOYPATH
