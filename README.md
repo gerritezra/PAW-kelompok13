@@ -7,7 +7,7 @@ Anggota:
 5. Naufal Halim (19/446784/TK/49889)
 
 # Penjelasan Web Secara Umum
-Web DATAKU adalah project web sederhana dari mata kuliah Pengembangan Aplikasi Web yang dapat memberikan fungsi CRUD menggunkana MERN (Mongoose, Express JS, React JS, dan Node JS). Web menjalankan 2 API dalam satu web, yakni API Mahasiswa yang menjadi akses untuk CRUD Mahasiswa dan API Jurusan yang menjadi kunci akses sebagai pelengkap di API Mahasiswa dan dapat melakukan CRUD pada Jurusan itu sendiri. Apabila salah satu Jurusan dihapus, maka data mahasiswa yang terikat dengan jurusan tersebut juga akan terhapus. 
+Web DATAKU adalah project web sederhana dari mata kuliah Pengembangan Aplikasi Web yang dapat memberikan fungsi CRUD menggunkana MERN (Mongoose, Express JS, React JS, dan Node JS).Web ini bertujuan untuk mendata mahasiswa dengan 2 API dalam satu web, yakni API Mahasiswa yang menjadi akses untuk CRUD Mahasiswa dan API Jurusan yang menjadi kunci akses sebagai pelengkap di API Mahasiswa dan dapat melakukan CRUD pada Jurusan itu sendiri. Apabila salah satu Jurusan dihapus, maka data mahasiswa yang terikat dengan jurusan tersebut juga akan terhapus. 
 
 # Penjelasan API Secara Umum
 Pada tugas kali ini, diminta membuat 2 Restful API yang masing-masing dapat menjalankan fungsi-fungsi CRUD ( *Create, Read, Update, and Delate*). 3 API tersebut yakni API yang memuat data mahasiswa secara umum dan API yang satunya lagi memuat data kontak mahasiswa. Selain itu, API Jurusan digunakan untuk pelengkap API Mahasiswa, Diharapkan dengan adanya API-API tersebut data-data mahasiswa dapat terintegrasi anatar data secara umum ataupun data kontak mahasiswa itu sendiri.
