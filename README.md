@@ -1,3 +1,11 @@
+# Project Team
+Anggota:
+1. Alvin Indra Kurniawan (19/439808/TK/48538)
+2. Aditya Yusuf Pramudita (19/444036/TK/49232)
+3. Dandy Alif Utama (19/446773/TK/49878)
+4. Gerrit Ezra Y. Kairupan (19/446777/TK/49882)
+5. Naufal Halim (19/446784/TK/49889)
+
 # Penjelasan API Secara Umum
 Pada tugas kali ini, diminta membuat 2 Restful API yang masing-masing dapat menjalankan fungsi-fungsi CRUD ( *Create, Read, Update, and Delate*). 3 API tersebut yakni API yang memuat data mahasiswa secara umum dan API yang satunya lagi memuat data kontak mahasiswa. Selain itu, API Jurusan digunakan untuk pelengkap API Mahasiswa, Diharapkan dengan adanya API-API tersebut data-data mahasiswa dapat terintegrasi anatar data secara umum ataupun data kontak mahasiswa itu sendiri.
 
